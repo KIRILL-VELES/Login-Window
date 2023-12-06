@@ -31,7 +31,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    @IBAction func loginButton(_ sender: UIButton) {
+    @IBAction func loginButtonAction(_ sender: UIButton) {
         print("CLICK")
     }
     
