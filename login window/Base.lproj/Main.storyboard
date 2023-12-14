@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,18 +20,18 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="q2K-MJ-BbV">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter yor name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XpX-FD-B7r">
-                                <rect key="frame" x="70" y="135" width="180" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XpX-FD-B7r">
+                                <rect key="frame" x="35" y="135" width="250" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="hUQ-e3-THY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="hUQ-e3-THY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7Wd-MM-MI3">
-                                <rect key="frame" x="70" y="204" width="180" height="34"/>
+                                <rect key="frame" x="35" y="204" width="250" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="Ogf-Bb-Cis"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Ogf-Bb-Cis"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
@@ -60,7 +60,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DQ7-UI-SfM"/>
-                                    <segue destination="Ojb-st-oEh" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="36H-Wq-1sG"/>
+                                    <segue destination="Ojb-st-oEh" kind="presentation" modalPresentationStyle="fullScreen" id="gzW-du-JYp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -127,7 +127,6 @@
                                 <connections>
                                     <action selector="logOutButtonAction:" destination="Ojb-st-oEh" eventType="touchUpInside" id="76j-5z-N29"/>
                                     <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PBp-LY-mdi"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Mf8-nd-OQw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -139,17 +138,20 @@
                             <constraint firstItem="9Df-9m-uif" firstAttribute="centerX" secondItem="FXZ-ms-aEk" secondAttribute="centerX" id="BJm-KU-9Ad"/>
                             <constraint firstItem="MQp-3F-xp0" firstAttribute="trailing" secondItem="1SP-PJ-SvR" secondAttribute="trailing" constant="16" id="E1i-us-4Zo"/>
                             <constraint firstItem="1SP-PJ-SvR" firstAttribute="leading" secondItem="MQp-3F-xp0" secondAttribute="leading" constant="16" id="SIP-bb-VdY"/>
-                            <constraint firstItem="NgR-kE-S78" firstAttribute="bottom" secondItem="MQp-3F-xp0" secondAttribute="bottom" id="kyf-lB-G1l"/>
+                            <constraint firstItem="NgR-kE-S78" firstAttribute="bottom" secondItem="FXZ-ms-aEk" secondAttribute="bottom" id="kyf-lB-G1l"/>
                             <constraint firstItem="NgR-kE-S78" firstAttribute="leading" secondItem="MQp-3F-xp0" secondAttribute="leading" id="qPP-oi-IlD"/>
                             <constraint firstItem="1SP-PJ-SvR" firstAttribute="top" secondItem="MQp-3F-xp0" secondAttribute="top" constant="126" id="sVp-Ml-a02"/>
                             <constraint firstItem="NgR-kE-S78" firstAttribute="trailing" secondItem="MQp-3F-xp0" secondAttribute="trailing" id="tgr-rV-3hi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9cb-sN-ur2"/>
+                    <connections>
+                        <outlet property="greetinglabel" destination="1SP-PJ-SvR" id="C8z-w1-lFn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cS7-hy-xsm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="871.875" y="0.0"/>
+            <point key="canvasLocation" x="939" y="-5"/>
         </scene>
     </scenes>
     <resources>
