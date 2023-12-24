@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, UITextFieldDelegate {
+final class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -50,7 +50,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    func showAlert(with title: String, message: String) {
+    private func showAlert(with title: String, message: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(okAction)
@@ -64,7 +64,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func showExitConfirmation() {
+   private func showExitConfirmation() {
         let alertController = UIAlertController(title: "Confirm Exit", message: "Do you want to log out and exit?", preferredStyle: .alert)
         
         let confirmAction = UIAlertAction(title: "Confirm", style: .destructive) { (_) in
@@ -80,7 +80,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         present(alertController, animated: true, completion: nil)
     }
     
-    func logout() {
+    private func logout() {
         nameTextField.text = nil
         passwordTextField.text = nil
     }
