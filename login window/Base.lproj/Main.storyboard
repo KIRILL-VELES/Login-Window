@@ -145,7 +145,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="9cb-sN-ur2"/>
                     <connections>
-                        <outlet property="greetinglabel" destination="1SP-PJ-SvR" id="C8z-w1-lFn"/>
+                        <outlet property="greetingLabel" destination="1SP-PJ-SvR" id="OgR-D2-JSH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cS7-hy-xsm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

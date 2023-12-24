@@ -64,7 +64,7 @@ final class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-   private func showExitConfirmation() {
+    private func showExitConfirmation() {
         let alertController = UIAlertController(title: "Confirm Exit", message: "Do you want to log out and exit?", preferredStyle: .alert)
         
         let confirmAction = UIAlertAction(title: "Confirm", style: .destructive) { (_) in
